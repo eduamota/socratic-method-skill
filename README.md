@@ -6,7 +6,7 @@ An agentic skill for **Google Antigravity** and LLM coding assistants that repla
 
 ## The Problem: The "Interview & Reveal" Trap
 
-Standard AI assistants typically follow an anti-pattern when prompted with open-ended or complex problems:
+Standard AI assistants typically fall into an anti-pattern when prompted with open-ended or complex problems:
 
 ```
 ❌ The Interview Trap:
@@ -14,7 +14,9 @@ Agent interrogates -> User answers -> Agent dumps finished solution
 (The human is treated as an intake form and sidelined from the creative process)
 ```
 
-In that model, the user becomes a passive spectator who either accepts or rejects a unilateral proposal.
+In that model, the user becomes a passive spectator who simply accepts or rejects a unilateral proposal.
+
+---
 
 ## The Solution: Shared Whiteboard Co-Creation
 
@@ -26,13 +28,31 @@ User & Agent explore tensions together -> Formulate counterarguments side-by-sid
 Build, dismantle, and shape alternatives together
 ```
 
-### Core Tenets
+### Core Operating Principles
 
-1. **Never Hand Down a Unilateral "Final Answer"**: The agent offers raw scaffolds, working hypotheses, or contrasting seeds, always inviting the user to steer, dismantle, or refine them.
-2. **Red-Teaming Counterarguments Together**: Strong objections from skeptics or adversaries are treated as joint puzzles to solve rather than tests for the user to defend alone.
-3. **Co-Developing Alternatives (Decision Forks, Not Menus)**: Surfaces the underlying tensions and trade-off sliders (e.g., speed vs. rigor, punchiness vs. nuance) instead of dumping pre-baked packages.
-4. **"Pass-the-Marker" Drafting**: Works in tight, shared loops—laying down one piece of the puzzle at a time with open steering points.
-5. **Universal Application**: Designed for both **non-technical** tasks (blog posts, essays, creative writing, strategy) and **technical** tasks (architecture, debugging, API design).
+1. **Never Hand Down a Unilateral "Final Answer"**:
+   - The agent presents raw scaffolds, working hypotheses, or contrasting seeds, always inviting the user to steer, dismantle, or refine them.
+2. **Red-Teaming Counterarguments Together**:
+   - Strong objections from skeptics or adversaries are treated as joint puzzles to solve rather than tests for the user to defend alone.
+3. **Co-Developing Alternatives (Decision Forks, Not Menus)**:
+   - Surfaces the underlying tensions and trade-off sliders (e.g., speed vs. rigor, punchiness vs. nuance) instead of dumping pre-baked packages.
+4. **"Pass-the-Marker" Drafting**:
+   - Works in tight, shared loops—laying down one piece of the puzzle at a time with open steering points.
+5. **Universal Application**:
+   - Designed for both **non-technical** tasks (blog posts, essays, creative writing, strategy) and **technical** tasks (architecture, debugging, API design).
+
+---
+
+## The 6 Socratic Question Archetypes
+
+| Archetype | Focus | Example Question |
+| :--- | :--- | :--- |
+| **Clarification & Intent** | Pinning down precise meaning | *"What do we mean by [term] in this specific context?"* |
+| **Probing Assumptions** | Surfacing unverified premises | *"What are we taking for granted that hasn't been tested?"* |
+| **Probing Evidence** | Checking validity & failure conditions | *"Under what conditions does this reasoning fall apart?"* |
+| **Alternative Perspectives** | Joint red-teaming & adversary views | *"What is the strongest objection a sharp skeptic would raise here?"* |
+| **Second-Order Effects** | Downstream consequences | *"If we choose this path, what becomes harder or irreversible down the road?"* |
+| **Questioning the Question**| Root-cause vs. symptom check | *"Are we solving the real bottleneck, or just treating an upstream symptom?"* |
 
 ---
 
@@ -79,7 +99,7 @@ Commit `.agents/skills/socratic-method/SKILL.md` to your version control reposit
 * **With this skill**:
   > *"You mentioned wanting to tackle this topic from a contrarian perspective. The mainstream argument is [Convention X]. Are we trying to nuance that view, or blow it up entirely?*
   > 
-  > *Here are two contrasting angles we could take:*
+  > *Here are two contrasting angles we could explore:*
   > - **Angle A (The Tactical Pivot)**: Focuses on concrete operational failures.
   > - **Angle B (The Philosophical Flaw)**: Focuses on an incorrect mental model.
   >
